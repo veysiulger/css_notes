@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /********  PSEUDO CLASSES     ****************
+ 
+ :link => ziyaret edilmemiş link
+ :active => Öğeye tıklanırsa aktif olur.
+ :focus => Öğeye odaklanılırsa
+ :hover => Mouse imleci öğenin üzerine gelirse
+ :visited => bağlantı ziyaret edildikten sonra
+ 
+ //form için
+
+ :checked => checkbox veya radio button seçilirse
+ :enabled => aktif olan form elemanları
+ :disabled => pasif olan form elemanları
+ :default => form grubundaki seçilmiş öğeler
+ :required => Zorunlu form öğeleri 
+
+ //yapısal
+
+ :nth-child(n) => belirlenen her child'ı seçer
+ :nth-last-child(n) => son child öğeden başlayıp, belirlenen sayıdaki öğe seçilir.
+
+ 
+ */
+
+ .a1:active{
+  border: 10px;
+  border-color: yellow;
+  color: tomato;
+ }
+ .a2:hover{
+  color: yellow;
+ }
+ /********   PSEUDO ELEMENT   *************************
+ 
+::before => seçilen sınıftan öncesine stil ekler
+::after => seçilen etiketten sonrasına stil eklenir.
+::first-line => ilgili etiketin ilk satırına
+::first::letter => ilgili etiketin ilk harfine
+ */
+
+ p::first-letter{
+  font-size: 60px;
+ }
+  </style>
+  <body>
+    <div class="div1" id="divId1">
+   <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="div2" id="divId"><a class="a1" href="#" target="">mesaj2</a></div>
+    <div class="div3" id="divId"><a class="a2" href="#" target="_blank">mesaj3</a></div>
+    
+  </body>
+</html>
