@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /********  DISPLAY    ****************
+
+    block tüm satırı kaplayan elemandır. Örnek: div
+    inline içerik kadar yer kaplayan etikettir. Örnek: span
+
+    Duruma göre, inline öğeyi, block, ya da tam tersi olacak şekilde, dönüştürmak isteriz.
+    Ya da bazen öğeyi gizlemek isteyebiliriz.
+
+    */
+
+    * {
+      margin: 0px;
+    }
+    .div1 {
+      background-color: black;
+      color: aliceblue;
+    }
+    span {
+      display: block;
+      background-color: yellowgreen;
+    }
+    .div3 {
+      display: inline;
+      background-color: tomato;
+    }
+
+    /*************     Z-INDEX     ************
+    
+    Sayfalar normalde x ve y düzlemini içerir. Biz  öğeleri
+    z ekseninde üst üste hizalamak isteyebiliriz. Böylece öğeler
+    üst üste binebilirler.
+
+    en yukarda gözükmesini istediğimiz öğeye en yüksek rakamı vermeliyiz.
+    
+    */
+
+    #divId2 {
+      display: absolute;
+      top: 250px;
+      left: 250px;
+    }
+    .div4 {
+      z-index: 2;
+      background-color: rgb(173, 0, 0);
+      color: aliceblue;
+      width: 600px;
+      height: 600px;
+    }
+    .div5 {
+      z-index: 1;
+      background-color: black;
+      color: aliceblue;
+      width: 400px;
+      height: 400px;
+    }
+    /*********   OVERFLOW     ********
+    Kutu boyutunu aşan içerikler için kullanılır.
+    overflow:auto
+    overflow:visible
+    overflow:scroll
+    overflow:hidden
+    */
+    #divId3 {
+      margin-top: 50px;
+      width: 250px;
+      height: 250px;
+    }
+    .scrollbar {
+      overflow: auto;
+    }
+    /*********   FLOAT     ********
+    Kutu tasarımlarımızın yan yana gelmesini istersek, flaot kullanmalıyız.
+    Alternatifi için; flexbox, araştır.
+    left,right,none değerlerini alır.   
+
+    sığmayan kutular otomatik olarak aşağıya kayar. 
+    */
+
+    .divfloat{
+      float: left;
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div class="div1" id="divId">
+      <p>Lorem <span>ipsum</span> dolor sit amet.</p>
+    </div>
+    <div class="div2" id="divId">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="div3" id="divId">
+      <a class="a1" href="#" target="">mesaj</a>
+    </div>
+
+    <div class="div4" id="divId2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, sunt
+        aliquid.
+      </p>
+
+      <div class="div5" id="divId2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officiis
+          temporibus.
+        </p>
+      </div>
+    </div>
+
+    <div class="scrollbar" id="divId3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi modi
+        alias nesciunt expedita voluptatem. Expedita fugiat modi rem nobis
+        praesentium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi modi
+        alias nesciunt expedita voluptatem. Expedita fugiat modi rem nobis
+        praesentium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi modi
+        alias nesciunt expedita voluptatem. Expedita fugiat modi rem nobis
+        praesentium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi modi
+        alias nesciunt expedita voluptatem. Expedita fugiat modi rem nobis
+        praesentium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi modi
+        alias nesciunt expedita voluptatem. Expedita fugiat modi rem nobis
+        praesentium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi modi
+        alias nesciunt expedita voluptatem. Expedita fugiat modi rem nobis
+        praesentium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi modi
+        alias nesciunt expedita voluptatem. Expedita fugiat modi rem nobis
+        praesentium.
+      </p>
+    </div>
+
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+    <div class="divfloat"></div>
+ 
+  </body>
+</html>
