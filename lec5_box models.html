@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /********  BOX MODELS    ****************
+    Bir kutu modelleyecek isek, toplam genişlik ve toplam yüksekliği
+    hesaplamamız gerekir.
+
+    C: içerik alanı.
+    S1: sağ ve sol padding(dolgu) toplam alanı
+    B1: sağ ve sol border(kenar) toplam alanı.
+    M1: sağ ve sol kenar margin(boşlukları) toplam alanı.
+
+    olsun. Ohalde toplam genişlik=C+S1+B1+M1 olur.
+    
+    C: içerik alanı.
+    S2: Üst ve alt padding(dolgu) toplam alanı
+    B2: Üst ve alt border(kenar) toplam alanı.
+    M2: Üst ve alt kenar margin(boşlukları) toplam alanı.
+    
+    Benzer şekilde toplam yükseklik=C+S2+B2+M2 olur.
+      
+    */
+
+    /*Genişlik(width) ve Yükseklik(height):
+    
+    Atanacak değerler, auto, px,em,cm, %,inherit, initial 
+    şeklindedir.
+
+    Kısıtlama yapmak istersek,
+    min-height,
+    max-height,
+    min-width,
+    max-width
+
+    özelliklerini ekleyebiliriz.
+    
+    */
+
+    * {
+      margin: 0px;
+    }
+    .div1 {
+      border: solid 4px chocolate;
+      
+      border-radius: 4px;
+      padding: 2px;
+      margin: 2px;
+      height: 100%;
+      width: 500px;
+    }
+    .div3 {
+      border: dashed 4px rgb(172, 72, 0);
+      
+      border-radius: 4px;
+      padding: 2px;
+      margin: 2px;
+      height: 100%;
+      width: 500px;
+    }
+
+  </style>
+  <body>
+    <div class="div1" id="divId">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="div2" id="divId">
+      <a class="a1" href="#" target="">mesaj2</a>
+    </div>
+    <div class="div3" id="divId">
+      <a class="a2" href="#" target="_blank">mesaj3</a>
+    </div>
+  </body>
+</html>

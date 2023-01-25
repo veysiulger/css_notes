@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /********  POSITION    ****************
+    Eğer içeriklerimizin, ya da html öğelerinin sayfa içerisinde,
+    sağa sola, aşağıya yukarıya hareket ettirmek istersek,
+    konumlarını değiştirmemiz gerekir. Boşuk bırakmak veya dolgu amacı ile
+    konum değiştirme yapılamaz. konum değiştirmek için,
+
+    position:static 
+    positin:relative
+    position:fixed
+    position:absolute
+    position:sticky
+
+     özellikleri eklenmelidir. İşlevleri için, 
+
+     https://www.w3schools.com/css/css_positioning.asp
+
+     adresi ziyaret edilmelidir.
+
+    */
+
+    * {
+      margin: 0px;
+    }
+    .div1 {
+      position: fixed;
+      background-color: aqua;
+      color: black;
+    }
+    .div2 {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      left:30px;
+      background-color: chocolate;
+    }
+
+    .div5 {
+      height: 1000px;
+    }
+  </style>
+  <body>
+    <div class="div1" id="divId">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="div2" id="divId">
+      <a class="a1" href="#" target="">mesaj2</a>
+    </div>
+    <div class="div3" id="divId">
+      <a class="a2" href="#" target="_blank">mesaj3</a>
+    </div>
+    <div class="div4" id="divId">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="div5" id="divId">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </body>
+</html>
